@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이메일 생성</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div id="gen-result">
+            <span>당신의 생성된 이메일 주소 : </span>
+            <input type="text" value="" id="email-gen-inp" placeholder="당신의 생성된 이메일 주소가 여기 나타날겁니다.">
+        </div>
+        <select name="몇 반인가요?" id="class-sel">
+            <option>반을 선택하세요</option>
+            <option value="c1" class="selectbox">1반</option>
+            <option value="c2" class="selectbox">2반</option>
+            <option value="c3" class="selectbox">3반</option>
+            <option value="c4" class="selectbox">4반</option>
+            <option value="c5" class="selectbox">5반</option>
+            <option value="c6" class="selectbox">6반</option>
+            <option value="c7" class="selectbox">7반</option>
+            <option value="c8" class="selectbox">8반</option>
+            <option value="c9" class="selectbox">9반</option>
+        </select>
+        <select name="번호를 선택하세요" id="num-sel">
+            <option>번호를 선택하세요</option>
+            <option value="n1" class="selectbox-two">01</option>
+            <option value="n2" class="selectbox-two">02</option>
+            <option value="n3" class="selectbox-two">03</option>
+            <option value="n4" class="selectbox-two">04</option>
+            <option value="n5" class="selectbox-two">05</option>
+            <option value="n6" class="selectbox-two">06</option>
+            <option value="n7" class="selectbox-two">07</option>
+            <option value="n8" class="selectbox-two">08</option>
+            <option value="n9" class="selectbox-two">09</option>
+            <option value="n10" class="selectbox-two">10</option>
+            <option value="n11" class="selectbox-two">11</option>
+            <option value="n12" class="selectbox-two">12</option>
+            <option value="n13" class="selectbox-two">13</option>
+            <option value="n14" class="selectbox-two">14</option>
+            <option value="n15" class="selectbox-two">15</option>
+            <option value="n16" class="selectbox-two">16</option>
+            <option value="n17" class="selectbox-two">17</option>
+            <option value="n18" class="selectbox-two">18</option>
+            <option value="n19" class="selectbox-two">19</option>
+            <option value="n20" class="selectbox-two">20</option>
+            <option value="n21" class="selectbox-two">21</option>
+            <option value="n22" class="selectbox-two">22</option>
+            <option value="n23" class="selectbox-two">23</option>
+            <option value="n24" class="selectbox-two">24</option>
+            <option value="n25" class="selectbox-two">25</option>
+            <option value="n26" class="selectbox-two">26</option>
+            <option value="n27" class="selectbox-two">27</option>
+            <option value="n28" class="selectbox-two">28</option>
+            <option value="n29" class="selectbox-two">29</option>
+            <option value="n30" class="selectbox-two">30</option>
+        </select>
+
+        <button id="submit">
+            생성
+        </button>
+
+        <a href="javascript:void(0)" class="popup-toggle">사용시 주의사항</a>
+
+        <button id="hrefbtn">내가 뭘까~</button>
+    </div>
+
+    <div id="popup">
+        <h3>사용시 주의사항 안내</h3>
+        <span>
+            <span>1. 이 사이트는 DB (DataBase 이하 데이터베이스)를 사용하지 않기에 <a href="#email-gen-inp" id="tp-here">이곳</a> 에 이메일 정보 등을 입력하면 새로고침을 할 때 사라집니다.</span>
+            <span>2. 각 반의 학생 수는 반별로 다르며, 번호는 최대 30개까지 가능합니다. 만약 부족할 일은 없겠지만 만일 부족하다면 0909aiden@naver.com 으로 문의주세요.</span>
+            <span>3. 다른 사람의 계정으로 로그인을 하지 맙시다. 만일 계정이 털리고 싶지 않다면 비밀번호를 바꾸세요.</span>
+        </span>
+
+        <a href="javascript:void(0)" id="pop-close">
+            <img src="./images/xbutton.png" alt="닫기">
+        </a>
+    </div>
+</body>
+</html>
